@@ -1,6 +1,6 @@
 # SIEVE Cache Implementation
 
-A C implementation of the SIEVE cache eviction algorithm, based on the research paper ["SIEVE is Simpler than LRU: an Efficient Turn-Key Eviction Algorithm for Web Caches"](https://dl.acm.org/doi/10.1145/3600006.3613152) by Zhang et al.
+A C implementation of the SIEVE cache eviction algorithm, based on the research paper (https://junchengyang.com/publication/nsdi24-SIEVE.pdf)
 
 ## Overview
 
