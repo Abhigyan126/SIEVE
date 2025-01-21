@@ -1,0 +1,4 @@
+/Users/abhigyan/Downloads/project/sieve/build/CMakeFiles/sieve_lib.dir
+/Users/abhigyan/Downloads/project/sieve/build/CMakeFiles/sieve_test.dir
+/Users/abhigyan/Downloads/project/sieve/build/CMakeFiles/edit_cache.dir
+/Users/abhigyan/Downloads/project/sieve/build/CMakeFiles/rebuild_cache.dir
