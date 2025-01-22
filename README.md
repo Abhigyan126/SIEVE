@@ -21,6 +21,35 @@ The cache is implemented with these key components:
 -  hand pointer for eviction
 - No complex data structures required
 
+Flowchart
+- ```mermaid
+%%{init: {'theme': 'black', 'themeVariables': { 'fontSize': '16px'}, "securityLevel": "loose"}}%%
+graph TD
+    A[Cache Operation] --> B{Operation Type}
+    
+    B -->|Insert| C{Key Exists?}
+    C -->|Yes| D[Update Value]
+    C -->|No| E{Cache Full?}
+    E -->|Yes| F[Eviction Process]
+    E -->|No| G[Insert New Entry]
+    
+    F --> H{Check Current Hand}
+    H -->|Visited=True| I[Set Visited=False]
+    I --> J[Move Hand]
+    J --> H
+    H -->|Visited=False| K[Evict Entry]
+    K --> G
+    
+    B -->|Get| L{Find Key}
+    L -->|Found| M[Mark Visited & Return]
+    L -->|Not Found| N[Return NULL]
+    
+    subgraph Cache Structure
+        O[Node Array] --> P[Key]
+        O --> Q[Value]
+        O --> R[Visited Flag]
+    end
+```
 ### Building the Project
 
 ```bash
