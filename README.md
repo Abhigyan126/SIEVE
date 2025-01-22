@@ -22,7 +22,8 @@ The cache is implemented with these key components:
 - No complex data structures required
 
 Flowchart
-- ```mermaid
+
+```mermaid
 %%{init: {'theme': 'black', 'themeVariables': { 'fontSize': '16px'}, "securityLevel": "loose"}}%%
 graph TD
     A[Cache Operation] --> B{Operation Type}
